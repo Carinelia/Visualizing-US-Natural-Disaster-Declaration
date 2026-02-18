@@ -5138,3 +5138,4 @@ disasterNumber,declarationDate,disasterName,incidentBeginDate,incidentEndDate,de
 56,1956-04-24 00:00:00+00:00,SEVERE STORM,1956-04-24 00:00:00+00:00,1956-04-24 00:00:00+00:00,Major Disaster,North Carolina                ,Severe Storm,1993-07-21 00:00:00+00:00,2001-09-09 00:00:00+00:00,1957-09-01 00:00:00+00:00,4,False,True,True,True,,1956-04-24T00:00:00.000Z,Closed,1956,0.0
 55,1956-04-21 00:00:00+00:00,FLOODS,1956-04-21 00:00:00+00:00,1956-04-21 00:00:00+00:00,Major Disaster,Idaho                         ,Flood,1993-07-21 00:00:00+00:00,2001-09-09 00:00:00+00:00,1961-04-01 00:00:00+00:00,10,False,True,True,True,,1956-04-21T00:00:00.000Z,Closed,1956,0.0
 54,1956-04-07 00:00:00+00:00,TORNADOES,1956-04-07 00:00:00+00:00,1956-04-07 00:00:00+00:00,Major Disaster,Oklahoma                      ,Tornado,1993-07-21 00:00:00+00:00,2001-09-09 00:00:00+00:00,1959-06-01 00:00:00+00:00,6,False,True,True,True,,1956-04-07T00:00:00.000Z,Closed,1956,0.0
+
