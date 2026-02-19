@@ -8,25 +8,96 @@ This project addresses the challenge by transforming FEMA’s Disaster Declarati
 
 - Reveal temporal trends, durations, and seasonal patterns of disasters.
 
-- Map geographic distribution and highlight repeatedly affected areas.
-
-- Track activation of Individual Assistance (IA), Individual and Household Programs (IH), and Public Assistance (PA).
+- Track activation of Individual Assistance (IA), Individual and Household Programs (IH), Hazard Mitigation Assistance (HMA) and Public Assistance (PA).
 
 - Compare disaster types to assess severity and recurrence.
 
 - Provide historical insights and predictive signals to support planning and resource allocation.
 
 ## Dataset Description:
+- **Source:** FEMA Disaster Declarations dataset (OpenFEMA API / CSV download).
+
+- **Size:** ~100,000+ records, 30+ columns.
+
+- **Fields used:**
+
+    - disasterNumber, stateName, incidentType, declarationType, declarationDate, closeoutDate.
+
+- **Fields Created:**
+    - FyDeclared, incidentDuration, status, requestingTime, programs. 
 
 ## KPIs Used:
+- **Count of disasterNumber:**  Total number of disasters declared.
+
+- **Average incidentDuration:**  Mean duration of disasters in days.
+
+- **Average requestingTime:**  Mean time taken to process disaster requests.
+
+- **Closed vs Open status ratio:**  Percentage of disasters resolved vs ongoing.
+
+- **Program activation counts:**  IA, IH, HMA, PA activations across states.
+
+- **Seasonality patterns:**  Average disasters per month.
 
 ## Dashboard Pages:
+### 1. Disaster Overview and Trends
+**Charts:**
+
+- **Line chart:** Disasters declared per fiscal year.
+
+- **Pie chart:** Distribution of declaration types (Major Disaster, Fire Management, Emergency, Fire Suppression).
+
+- **Bar chart:** Frequency of each incident type (Fire, Flood, Hurricane, Tornado, etc.) and Frequency of disasters over Month.
+
+
+*Question answered: What types of disasters are most frequently declared, and which states/regions experience the highest number of disasters?*
+
+### 2. Process & Timelines
+**Charts:**
+
+- **KPI card:** Average requesting time vs target benchmark (< 5 days).
+
+- **Line chart:** Requesting time trend by fiscal year.
+
+- **Bar chart:** Requesting time by state.
+
+- **Pie chart:** Disaster status (Closed vs Open).
+
+- **Stacked bar chart:** Program activations by state.
+
+*Question answered: How efficient is FEMA’s disaster response process — in terms of average request processing time, closure rates, and program activation timelines?*
 
 ## Key Insights:
+***Disaster Overview:***
+
+- Major Disasters dominate declarations (~60%).
+
+- Fire, Severe storms, and Hurricanes are the most frequent incident types.
+
+- States like Texas, Florida, and California consistently lead in disaster counts.
+
+***Process & Timelines:***
+
+- Average request processing time is ~33 days, far above the benchmark of 5 days.
+
+- Closure rates are strong (73% closed), but ~27% remain open.
+
+- Certain states (e.g., Marshall Islands, Micronesia) show extreme delays in processing.
+
+- PA and IA programs are most frequently activated, reflecting large‑scale infrastructure and individual recovery needs.
 
 ## Recommendation:
+- **Reduce Requesting Time:** FEMA should prioritize faster processing in high‑volume states to meet the < 5‑day benchmark.
+
+- **Resource Allocation:** Focus resources on PA and IA programs, which dominate disaster recovery.
+
+- **Seasonal Preparedness:** Strengthen readiness for late summer (hurricane season) and spring (flood season) peaks.
+
+- **Regional Focus:** Target interventions in disaster‑prone states (Texas, Florida, California) and regions with long delays (Pacific territories).
+
+- **Monitoring Duration:** Track incident durations closely to anticipate complex recovery efforts and allocate long‑term support.
 
 ## Tools Used:
-- **POWER BI:** To clean and load the dataset
+- **POWER BI:** To clean, load and visualize the data
 - **VS CODE:** To clean the dataset using *Python*
 - **GITHUB:** To showcase this project
